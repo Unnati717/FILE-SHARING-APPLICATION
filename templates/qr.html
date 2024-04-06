@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <div class="file-uploader"></div>
+        <table>
+            <tr>
+                <td>
+                    <div class="file-chooser">
+                        <p>Browse Files to download</p>
+                        <img src="{{ url_for('static', filename='uploads/qr1.png') }}" >
+                        <p>
+                            <a href="{{ urls[0] }}" target="_blank">{{ urls[0] }}</a>
+                        </p>
+                    </div>
+                </td>
+                <td>
+                    <div class="file-chooser">
+                        <p>Download all files as a zip</p>
+                        <img src="{{ url_for('static', filename='uploads/qr2.png') }}">
+                        <p>
+                            <a href="{{ urls[1] }}" target="_blank">{{ urls[1] }}</a>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </table>            
+    </div>
+</body>
+</html>
